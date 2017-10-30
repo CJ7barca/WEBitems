@@ -1,0 +1,1068 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>小米</title>
+<link rel="stylesheet" type="text/css" href="icon/iconfont.css">
+<style>
+body{ margin:0; padding:0;}
+.auto{ width:1226px;margin: 0 auto;}
+.clear{ clear:both}
+.top{ max-width:2560px; height:120px; background:url(images/cms_15014999835023_VNjqi.jpg) no-repeat; margin:0 auto; background-position:center}
+.head{height: 40px;font-size: 12px;color: #b0b0b0;background: #333;}
+.top_nav{ float:left;height: 40px;line-height: 40px;overflow: hidden;}
+.top_nav a{ font-family:"微软雅黑"; font-size:12px;color: #b0b0b0;text-decoration: none;}
+.top_nav a:hover{ color:#FFF}
+.top_nav span{color: #424242; margin:0 6px}
+.top_car{width: 120px;margin-left: 15px; height:40px; float:right; position:relative}
+.top_carmain{line-height: 40px;text-align: center;color: #b0b0b0;background: #424242;height: 40px; font-family:"微软雅黑"; transition: background-color 0.2s, color 0.2s;}
+.top_carmain i{margin-right: 4px;font-size: 16px;line-height: 20px;vertical-align: -1px;}
+.top_carmain span{margin-left:4px;}
+.top_carmain:hover{cursor:pointer; background:#FFF; color:#ff6700; transition: background-color 0.2s, color 0.2s;}
+.top_carmore{width: 316px; height:0px;background: #fff;box-shadow: 0 8px 10px rgba(0,0,0,0.15);position: absolute;right: 0;top: 40px; overflow:hidden; transition:0.2s}
+.loading{ padding-top:40px; padding-left:20px; padding-right:20px;text-align: center; font-family:"微软雅黑";color: #5E5E5E}
+.top_car:hover .top_carmore{ height:98px; transition:0.2s}
+.top_self{ line-height:40px; float:right; height:40px; margin-right:10px}
+.top_self a{ font-family:"微软雅黑"; font-size:12px;color: #b0b0b0;text-decoration: none;}
+.top_self a:hover{ color:#FFF}
+.top_self span{color: #424242; margin:0 6px}
+.title{height: 100px;}
+.logo{float: left;width: 62px;margin-top: 22px;}
+.logo a{ display:block;width: 55px;height: 55px;overflow: hidden;background-color: #ff6700;}
+.logo a div{ margin-top:4px; margin-left:4px}
+.title_nav{float: left;width: 850px; height:100px}
+.gif{ float:left; margin-top:17px}
+.title_nav1{ float:left;padding: 26px 10px 38px; margin-top:12px}
+.title_nav1 a{ text-decoration:none; color:#333; font-family:"微软雅黑"; font-size:16px; line-height:16px}
+.logo, .gif, .title_nav1:hover{ cursor:pointer}
+.title_nav1:hover a{color:#ff6700}
+.title_search{ float: right; margin-top: 25px;}
+.search_box{width: 223px;
+    height: 48px;
+    padding: 0 10px;
+    border: 1px solid #e0e0e0;
+    font-size: 14px;
+    line-height: 48px; outline: none; color:#777 ;}
+.search_box:hover{border-color:#b0b0b0}
+.search_box:focus{border-color: #ff6700;}
+.search_search{display: block; float: right; width: 50px;
+    height: 48px;
+    border: 1px solid #e0e0e0; border-left: none;
+    line-height: 48px; text-align: center;  transition: 0.3s}
+.search_search i{font-size: 18px;}
+.search_search:hover{ background: #ff6700;color: #fff; border-color:#ff6700; transition: 0.3s; cursor: pointer;}
+.banner_top{ width: 1226px;position: relative;}
+.banner_top ul, .banner_top ul li{margin: 0; padding: 0; list-style: none;}
+.banner_top ul{position: relative;}
+.banner_top ul li{opacity: 0; position: absolute;left: 0; top: 0; transition: opacity 0.5s}
+.banner_top ul li.bl{opacity: 1;transition: opacity 0.5s;}
+.banner_lr{position: absolute; width: 992px; margin-left: 234px; margin-top: 194px;}
+.banner_l{ width: 42px; height: 69px; background: url(images/icon-slides.png) no-repeat -84px 0px; display: block; float: left;}
+.banner_r{ width: 42px; height: 69px; background: url(images/icon-slides.png) no-repeat -125px 0px; display: block; float: right;}
+.banner_l:hover{background: url(images/icon-slides.png) no-repeat 0px 0px; cursor: pointer;}
+.banner_r:hover{background: url(images/icon-slides.png) no-repeat -42px 0px; cursor: pointer;}
+#btn{position: absolute; top: 420px; right: 30px;}
+#btn a{ display:block; float: left; width: 6px; height: 6px; border: 2px solid #999999; border-radius: 50%; background:#555555; margin: 6px;}
+#btn a:hover{cursor: pointer; background: #FFFFFF;}
+#btn a.white{ background: white;}
+.banner_menu{ position: absolute; width: 234px; height: 420px; background: rgba(0,0,0,0.6); padding-bottom: 20px; padding-top: 20px;}
+.banner_menu1, .banner_menu2, .banner_menu3, .banner_menu4, .banner_menu5, .banner_menu6, .banner_menu7, .banner_menu8, .banner_menu9, .banner_menu10{ position: relative; height: 42px;color: #fff;  font-size: 15px; line-height: 42px;padding-left: 30px; font-family: "microsoft yahei";}
+.banner_menu1:hover, .banner_menu2:hover, .banner_menu3:hover, .banner_menu4:hover, .banner_menu5:hover, .banner_menu6:hover, .banner_menu7:hover, .banner_menu8:hover, .banner_menu9:hover, .banner_menu10:hover{background: #ff6700; cursor: pointer;}
+.banner_menu1 i{ margin-left: 90px; font-size: 13px; color: #EEEEEE;}
+.banner_menu2 i{ margin-left: 90px; font-size: 13px; color: #EEEEEE;}
+.banner_menu3 i{ margin-left: 104px; font-size: 13px; color: #EEEEEE;}
+.banner_menu4 i{ margin-left: 59px; font-size: 13px; color: #EEEEEE;}
+.banner_menu5 i{ margin-left: 25px; font-size: 13px; color: #EEEEEE;}
+.banner_menu6 i{ margin-left: 104px; font-size: 13px; color: #EEEEEE;}
+.banner_menu7 i{ margin-left: 90px; font-size: 13px; color: #EEEEEE;}
+.banner_menu8 i{ margin-left: 54px; font-size: 13px; color: #EEEEEE;}
+.banner_menu9 i{ margin-left: 50px; font-size: 13px; color: #EEEEEE;}
+.banner_menu10 i{ margin-left: 74px; font-size: 13px; color: #EEEEEE;}
+.banner_menu_more{position: absolute; left:234px; top: -20px; display: none; width: 380px; height: 458px; border-top: 1px solid #CCCCCC; border-right: 1px solid #CCCCCC; border-bottom: 1px solid #CCCCCC; background: #FFFFFF;}
+.banner_menu1:hover .banner_menu_more{display: block;}
+.banner_menu2:hover .banner_menu_more{display: block;top:-62px}
+.banner_menu3:hover .banner_menu_more{display: block;top:-104px}
+.banner_menu4:hover .banner_menu_more{display: block;top:-146px}
+.banner_menu5:hover .banner_menu_more{display: block;top:-188px}
+.banner_menu6:hover .banner_menu_more{display: block;top:-230px}
+.banner_menu7:hover .banner_menu_more{display: block;top:-272px}
+.banner_menu8:hover .banner_menu_more{display: block;top:-314px}
+.banner_menu9:hover .banner_menu_more{display: block;top:-356px}
+.banner_menu10:hover .banner_menu_more{display: block;top:-398px}
+.chanpin{width: 265px; height: 77px;}
+.xiaomi{float:left;width: 110px; height: 42px; margin-top:18px; margin-left:18px;line-height: 42px; font-size: 16px; font-family: "微软雅黑";color: #000000; background: url(images/80pc-5x.png) no-repeat; padding-left: 60px;}
+.xuangou{float: left; width: 58px;height: 22px;line-height: 22px;border: 1px solid #ff6700; margin-top: 28px;text-align: center;color:#ff6700 ; background: #FFFFFF;transition: background 0.3s, color 0.3s;}
+.xuangou:hover{cursor: pointer;background:#ff6700 ; color: #FFFFFF; transition: background 0.3s, color 0.3s;}
+.bijiben{float:left;width: 110px; height: 42px; margin-top:18px; margin-left:18px;line-height: 42px; font-size: 16px; font-family: "微软雅黑";color: #000000; background: url(images/bijiben80.jpg) no-repeat; padding-left: 60px;}
+.banner_bottom{margin-top: 474px; width: 1226px;}
+.span6{width: 234px;float: left;}
+.span6_list{height: 164px; margin: 0; padding:3px;list-style: none;font-size: 12px;text-align: center;background: #5f5750;}
+.span6_list li{float: left;width: 70px;height: 82px;padding: 0 3px;display: list-item;background: #5f5750;}
+.span6_list li a{display: block;padding-top: 18px;color: rgba(255,255,255,0.7); font-family: "微软雅黑";transition: color 0.2s;}
+.span6_list li a i{display: block;
+    height: 24px;
+    margin-bottom: 4px;
+    font-size: 24px;
+    line-height: 24px;}
+.span6_list li:hover a{color: #FFFFFF;transition: color 0.2s; cursor: pointer;transition: box-shadow linear 0.2s}
+.item{float: left; margin-left: 14px;}
+.item img{width: 316px; height: 170px;}
+.item:hover{cursor: pointer; box-shadow: 0 15px 30px #E9E9E9;transition: box-shadow linear 0.2s}
+.xm_star{ margin-top: 26px;}
+.xm_star_hd{height: 58px; width: 1226px; position: relative;}
+.xm_star_hd h2{margin: 0;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 58px;
+    color: #333;font-family: "微软雅黑";}
+.more{ width: 70px; height: 25px; position: absolute;top: 24px; right: 0; border: 1px solid #e0e0e0;}
+.more_left{width: 35px;height: 25px; border-left: 1px solid #e0e0e0;display: inline-block; transform: rotate(180deg);color: #e0e0e0; font-size: 12px; line-height: 25px;}
+.more_right{padding: 3px 5px; color: #B0B0B0;}
+.xm_star_main{height: 340px; overflow: hidden; width:1226px;}
+.xm_star_list{width: 2480px;height: 340px; margin: 0; padding: 0; list-style: none; margin-left: 0px; transition:  margin-left 0.5s ease;}
+.xm_star_list li{ list-style: none;}
+.xm_star_list1{border-top:1px solid #ffac13; padding-top: 39px; height: 300px;text-align: center;background: #fafafa;float: left;width: 234px;margin-right: 14px;}
+.star_img1{ width: 160px;display: block;margin: 0 auto 22px;}
+.star_img1 img{ width: 160px; height: 160px;}
+.star_title1{color: #212121;margin: 0 20px 3px;font-size: 14px;font-weight: 400; font-family: "微软雅黑";}
+.desc{height: 18px;
+    margin: 0 20px 12px;
+    font-size: 12px;    color: #b0b0b0; font-family: "微软雅黑";}
+.price{margin: 0;color: #ff6709; font-family: "微软雅黑";text-align: center;font-size: 14px;}
+.xm_star_list2{border-top:1px solid #0099FF; padding-top: 39px; height: 300px;text-align: center;background: #fafafa;float: left;width: 234px;margin-right: 14px;}
+.home_main{width: 100%;background: #f5f5f5;padding-top: 60px; margin-top: 40px;}
+.jiadian{position: relative;}
+.jiadian_more{position: absolute; top: 0; right: 0;}
+.jiadian_title{margin: 0; padding: 0; list-style: none;padding: 16px 0 0;}
+.jiadian_title li{line-height: 25px; color:#333;font-size: 16px; font-family: "微软雅黑";display: inline-block;margin: 0 0 0 30px;}
+.jiadian_title li.jdd{cursor: pointer; line-height: 25px;font-size: 16px; font-family: "微软雅黑";display: inline-block;margin: 0 0 0 30px;color:#ff6700;border-bottom: 2px solid #ff6700}
+.jiadianbox{ width:100%;}
+.jiucar{ width: 234px; height: 614px; padding-top: 3px;transition:0.2s; float: left;}
+.jiucar img{ width: 234px; height: 614px;}
+.jiucar:hover{ cursor: pointer; padding-top: 0px; transition:0.2s;}
+.jdbigbox{float: right; }
+.jdbigBOX{ margin: 0; padding: 0; list-style: none;width: 992px; height: 614px; padding-top: 3px;}
+.jdbigBOX li{ padding: 0; list-style: none;display: list-item;}
+.boxitem{margin-left:14px;margin-right:0px; margin-bottom: 14px; width: 234px; height: 300px; float: left; background: #FFFFFF;transition:0.2s; position: relative;}
+.boxitem_img{width: 150px;height: 150px;margin: 34px auto 18px;}
+.box_title{font-family: "微软雅黑";font-size: 14px;font-weight: 400;text-align: center;color: #333;margin: 0 10px;}
+.boxitem .price del{color: #b0b0b0;}
+.boxitem:hover{ cursor: pointer;box-shadow: 0 15px 30px rgba(0,0,0,0.1);transition:0.2s;transform: translate3d(0, -2px, 0);}
+.review-wrapper{position: absolute;
+	bottom: 0;
+    left: 0;
+    z-index: 3;
+    width: 234px;
+    height: 0;
+    overflow: hidden;
+    font-size: 12px;
+    background: #ff6700;
+    opacity: 0;transition: all .2s linear;}
+.review-wrapper a{display: block;padding: 8px 30px;outline: 0;font-family: "微软雅黑"; font-size: 12px;}
+.review{margin-bottom: 5px;color: #fff; display: block;}
+.author{color: rgba(255,255,255,0.6);}
+.boxitem:hover .review-wrapper{ height: 76px; opacity: 1;transition: all .2s linear;}
+.tuijian{padding-top: 26px;background: #f5f5f5; width: 100%;}
+.rpcp{padding-top: 35px;background: #f5f5f5; width: 100%; padding-bottom: 80px;}
+.rpcp_box{ margin: 0; padding: 0; list-style: none;width: 1240px;height: 415px;}
+.rpcp_box li{ display: list-item;}
+.rpcp_boxsmall{float: left;width: 296px;height: 415px;margin-bottom: 14px;background: #fff;transition: all 0.2s linear;}
+.rpcp_boxsmall:hover{box-shadow: 0 15px 30px rgba(0,0,0,0.1);transform: translate3d(0, -2px, 0);cursor: pointer;transition: all 0.2s linear;}
+.figure_img{width: 296px;height: 220px;margin: 0 0 28px;}
+.rpcp_boxsmall .review{height: 72px;
+    margin: 0 28px 22px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    overflow: hidden;color: #333; font-family: "微软雅黑";}
+    .rpcp_boxsmall .author{height: 18px;
+    margin: 0 28px 8px;
+    padding: 0 10px 0 0;
+    font-size: 12px;
+    color: #b0b0b0;font-family: "微软雅黑";}
+.info{margin: 0 30px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;}
+.info .info_title{display: inline-block;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 170px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;vertical-align: bottom;
+    color: #333;font-family: "微软雅黑";}
+.info .sep{color: #b0b0b0;font-family: sans-serif; margin: 0 5px;}
+.info .price{display: inline;
+    margin: 0;
+    color: #ff6700;}
+.footer{ width: 100%; background: #FFFFFF;}
+.footer_service{padding: 27px 0;border-bottom: 1px solid #e0e0e0;}
+.service{ margin: 0; padding: 0; list-style: none;}
+.service li{display: list-item;float: left;
+    width: 19.8%;
+    height: 25px;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;}
+    .service li a{color: #616161; font-family: "微软雅黑"; transition: color 0.2s;}
+    .service li a i{margin-right: 6px;
+    font-size: 24px;
+    line-height: 24px;vertical-align: -4px;font-style: normal; font-weight: 400;}
+.service li a:hover{color: #ff6700; transition: color 0.2s; cursor: pointer;}
+.footer_links{    padding: 40px 0;}
+.footer_links dl{float: left;
+    width: 160px;
+    height: 112px;
+    margin: 0;display: block; font-family: "微软雅黑";}
+.footer_links dl dt{display: block;margin: -1px 0 26px;
+    font-size: 14px;
+    line-height: 1.25;
+    color: #424242;}
+.footer_links dl dd{margin: 10px 0 0;
+    font-size: 12px;}
+.footer_links dl dd a{color: #757575;}
+.footer_links dl dd a:hover{color: #ff6700;cursor: pointer;}
+.col-contact{float: right;
+    width: 251px;
+    height: 112px;
+    border-left: 1px solid #e0e0e0;
+    text-align: center;
+    color: #616161;}
+.tel{margin: 0 0 5px;
+    font-size: 22px;
+    line-height: 1;
+    color: #ff6700; font-family: "微软雅黑";}
+.col-contact .zhouyi{margin: 0 0 16px;
+    font-size: 12px;font-family: "微软雅黑";}
+.col-contact a{
+    background: #fff;
+    color: #ff6700;width: 118px;
+    height: 28px;
+    font-size: 12px;
+    line-height: 28px;    display: inline-block; font-family: "微软雅黑";    border: 1px solid #ff6700;transition: all .4s; cursor: pointer;}
+.col-contact a:hover{ background:#ff6700; color: #fff;transition: all .4s;}
+.end{padding: 30px 0 60px;
+    font-size: 12px;
+    background: #fafafa;}
+.milogo{float: left;
+    width: 57px;
+    height: 57px;
+    margin-right: 10px;background: url(images/logo-footer.png) no-repeat 50% 50%;}
+.info-text{float: left;
+    color: #b0b0b0;}
+.sites{margin: 0;
+    line-height: 18px;display: block; font-family: "微软雅黑";}
+    .sites a{color: #757575;}
+    .sites a:hover{color: #ff6700;cursor: pointer;}
+    .sites span{margin: 0 .25em;
+    font-family: sans-serif;}
+    .info-links{    float: right;
+    height: 28px;
+    margin: 4px 0 0;}
+    .info-links a img{width: auto;
+    height: 28px;
+    margin-left: 7px;}
+    .info-links a:hover{cursor: pointer;}
+</style>
+</head>
+
+<body>
+<div class="top"></div>
+
+<div class="head">
+<div class="auto">
+	<div class="top_nav">
+    	<a href="#">小米商城</a><span class="sep">|</span>
+        <a href="#">MIUI</a><span class="sep">|</span>
+        <a href="#">米聊</a><span class="sep">|</span>
+        <a href="#">游戏</a><span class="sep">|</span>
+        <a href="#">多看阅读</a><span class="sep">|</span>
+        <a href="#">云服务</a><span class="sep">|</span>
+        <a href="#">金融</a><span class="sep">|</span>
+        <a href="#">小米商城移动版</a><span class="sep">|</span>
+        <a href="#">问题反馈</a><span class="sep">|</span>
+        <a href="#">Select Region</a>
+    </div>
+    <div class="top_car">
+    <div class="top_carmain"><i class="iconfont icon-gouwuche"></i>购物车<span>( 0 )</span></div>
+    <div class="top_carmore"><div class="loading">购物车中还没有商品，赶紧选购吧！</div></div>
+    </div>
+    <div class="top_self">
+    	<a href="#">登录</a><span class="sep">|</span>
+        <a href="#">注册</a><span class="sep">|</span>
+        <a href="#">消息通知</a>
+    </div>
+	<div class="clear" style="line-height:0px"></div>
+</div>
+</div>
+
+<div class="title">
+<div class="auto">
+	<div class="logo">
+    	<a><div><img src="images/mi-logo.png" width="49" height="49"  alt=""/></div></a>
+    </div>
+    <div class="title_nav">
+        	<div class="gif"><img src="images/yiyuanyingbijiben.gif" width="180" height="66"  alt=""/></div>
+            <div class="title_nav1"><a href="#">小米手机</a></div>
+            <div class="title_nav1"><a href="#">红米</a></div>
+            <div class="title_nav1"><a href="#">平板·笔记本</a></div>
+            <div class="title_nav1"><a href="#">电视</a></div>
+            <div class="title_nav1"><a href="#">盒子·影音</a></div>
+            <div class="title_nav1"><a href="#">路由器</a></div>
+            <div class="title_nav1"><a href="#">智能硬件</a></div>
+            <div class="title_nav1"><a href="#">服务</a></div>
+            <div class="title_nav1"><a href="#">社区</a></div>
+            <div class="clear"></div>
+      </div>
+      <div class="title_search">
+      	<input class="search_box" type="text" name="title_search_box" id="title_search_box" placeholder="小米 MAC2 赠耳机" />
+      	<a class="search_search"><i class="iconfont icon-fangdajing"></i></a>
+      </div>
+	<div class="clear"></div>
+</div>
+</div>
+
+<div class="banner auto">
+	<div class="banner_top">
+		<ul id="banner_list">
+				<li><img src="images/banner2.jpg"/></li>
+				<li><img src="images/banner1.jpg"/></li>
+				<li><img src="images/banner4.jpg"/></li>
+				<li><img src="images/banner3.jpg"/></li>
+				<li><img src="images/banner5.jpg"/></li>
+			</ul>
+			<div class="banner_lr"><a class="banner_l" id="banner_l"></a><a class="banner_r" id="banner_r"></a><div class="clear"></div></div>
+			<div id="btn"><a></a><a></a><a></a><a></a><a></a><div class="clear"></div></div>
+			<div class="banner_menu">
+				<div class="banner_menu1">手机 电话卡<i class="iconfont icon-xiangyou"></i>
+					<div class="banner_menu_more">
+						<div class="chanpin"><div class="xiaomi">小米5X</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="xiaomi">小米5X</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="xiaomi">小米5X</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="xiaomi">小米5X</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="xiaomi">小米5X</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="banner_menu2">笔记本 平板<i class="iconfont icon-xiangyou"></i>
+					<div class="banner_menu_more">
+						<div class="chanpin"><div class="bijiben">小米笔记本</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="bijiben">小米笔记本</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="bijiben">小米笔记本</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="bijiben">小米笔记本</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="bijiben">小米笔记本</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="banner_menu3">电视 盒子<i class="iconfont icon-xiangyou"></i>
+					<div class="banner_menu_more">
+						<div class="chanpin"><div class="xiaomi">小米5X</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="xiaomi">小米5X</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="xiaomi">小米5X</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="xiaomi">小米5X</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="xiaomi">小米5X</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="banner_menu4">路由器 智能硬件<i class="iconfont icon-xiangyou"></i>
+					<div class="banner_menu_more">
+						<div class="chanpin"><div class="bijiben">小米笔记本</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="bijiben">小米笔记本</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="bijiben">小米笔记本</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="bijiben">小米笔记本</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="bijiben">小米笔记本</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="banner_menu5">移动电源 电池 插线板<i class="iconfont icon-xiangyou"></i>
+					<div class="banner_menu_more">
+						<div class="chanpin"><div class="xiaomi">小米5X</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="xiaomi">小米5X</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="xiaomi">小米5X</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="xiaomi">小米5X</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="xiaomi">小米5X</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="banner_menu6">耳机 音响<i class="iconfont icon-xiangyou"></i>
+					<div class="banner_menu_more">
+						<div class="chanpin"><div class="bijiben">小米笔记本</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="bijiben">小米笔记本</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="bijiben">小米笔记本</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="bijiben">小米笔记本</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="bijiben">小米笔记本</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="banner_menu7">保护套 贴膜<i class="iconfont icon-xiangyou"></i>
+					<div class="banner_menu_more">
+						<div class="chanpin"><div class="xiaomi">小米5X</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="xiaomi">小米5X</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="xiaomi">小米5X</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="xiaomi">小米5X</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="xiaomi">小米5X</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="banner_menu8">线材 支架 储存卡<i class="iconfont icon-xiangyou"></i>
+					<div class="banner_menu_more">
+						<div class="chanpin"><div class="bijiben">小米笔记本</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="bijiben">小米笔记本</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="bijiben">小米笔记本</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="bijiben">小米笔记本</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="bijiben">小米笔记本</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="banner_menu9">箱包 鞋 服饰 眼镜<i class="iconfont icon-xiangyou"></i>
+					<div class="banner_menu_more">
+						<div class="chanpin"><div class="xiaomi">小米5X</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="xiaomi">小米5X</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="xiaomi">小米5X</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="xiaomi">小米5X</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="xiaomi">小米5X</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="banner_menu10">米兔 生活周边<i class="iconfont icon-xiangyou"></i>
+					<div class="banner_menu_more">
+						<div class="chanpin"><div class="bijiben">小米笔记本</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="bijiben">小米笔记本</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="bijiben">小米笔记本</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="bijiben">小米笔记本</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						<div class="chanpin"><div class="bijiben">小米笔记本</div><div class="xuangou">选购</div><div class="clear"></div>
+						</div>
+						
+					</div>
+				</div>
+				
+			</div>
+	</div>
+	<script>
+		var a=document.getElementById("banner_list").getElementsByTagName("li")
+		var Btn=document.getElementById("btn").getElementsByTagName("a")
+		var b=document.getElementById("banner_list")
+		var left=document.getElementById("banner_l")
+		var right=document.getElementById("banner_r")
+		var i=0
+		var f=0
+		a[i].className="bl";
+		Btn[f].className="white"
+		while(f<Btn.length){
+				Btn[f].index=f
+				Btn[f].onclick=function(){
+					i=this.index              
+					var f=0
+					while(f<Btn.length){
+						Btn[f].className=""
+						a[f].className=""	
+						f++
+					}
+					this.className="white"
+					a[this.index].className="bl"				
+				}
+				f++
+			}
+		function play(){
+				var e=i
+				i<a.length-1?i++:i=0
+				a[e].className=""
+				a[i].className="bl"
+				Btn[e].className=""
+				Btn[i].className="white"
+			}
+		left.onclick=function(){
+			var e=i
+			i>0?i--:i=a.length-1
+			a[e].className=""
+			a[i].className="bl"
+			Btn[e].className=""
+			Btn[i].className="white"
+		}
+		right.onclick=play
+		var time=setInterval(play,5000)
+			b.onmousemove=function(){
+				clearInterval(time)
+			}
+			b.onmouseout=function(){
+				time=setInterval(play,5000)
+			}
+		
+	</script>
+		
+</div>
+<div class="banner_bottom auto">
+		<div class="span6">
+			<ul class="span6_list">
+				<li class="span6_lt">
+					<a><i class="iconfont icon-shouji"></i>选购手机</a>
+				</li>
+				<li class="span6_lt">
+					<a><i class="iconfont icon-baoguo-"></i>企业团购</a>
+				</li>
+				<li class="span6_lt">
+					<a><i class="iconfont icon-1yg"></i>一元活动</a>
+				</li>
+				<li class="span6_lt">
+					<a><i class="iconfont icon-shoujiqia"></i>米粉卡</a>
+				</li>
+				<li class="span6_lt">
+					<a><i class="iconfont icon-yijiuhuanxintubiao03"></i>以旧换新</a>
+				</li>
+				<li class="span6_lt">
+					<a><i class="iconfont icon-qianbao"></i>话费充值</a>
+				</li>
+			</ul>
+		</div>
+		<div class="item"><img src="images/xmad_15023608020152_xJirg.jpg"/></div>
+		<div class="item"><img src="images/xmad_15027090424843_nteTN.jpg"/></div>
+		<div class="item"><img src="images/xmad_15015006045059_PEafU.jpg"/></div>
+		<div class="clear"></div>
+	</div>
+<div class="xm_star auto">
+	<div class="xm_star_hd">
+		<h2>小米明星产品</h2>
+		<div class="more">
+			<a class="more_left" id="more_left"><i class="iconfont icon-xiangyou"></i></a>
+			<a class="more_right" id="more_right"><i class="iconfont icon-xiangyou"></i></a>
+		</div>
+		
+	</div>
+	<div class="xm_star_main">
+		<ul class="xm_star_list" id="star">
+			<li class="xm_star_list1">
+				<a class="star_img1"><img src="images/xmad_14966625747867_qcTyh.png"/></a>
+				<h3 class="star_title1"><a>小米5X</a></h3>
+				<p class="desc">4100mAh超长续航，8 核处理器</p>
+				<p class="price">699元起</p>
+			</li>
+			<li class="xm_star_list2">
+				<a class="star_img1"><img src="images/xmad_14972549116226_tZpod.png"/></a>
+				<h3 class="star_title1"><a>小米空气净化器</a></h3>
+				<p class="desc">OLED显示屏幕，激光颗粒物传感器</p>
+				<p class="price">1499元</p>
+			</li>
+			<li class="xm_star_list1">
+				<a class="star_img1"><img src="images/xmad_14966625747867_qcTyh.png"/></a>
+				<h3 class="star_title1"><a>小米5X</a></h3>
+				<p class="desc">4100mAh超长续航，8 核处理器</p>
+				<p class="price">699元起</p>
+			</li>
+			<li class="xm_star_list2">
+				<a class="star_img1"><img src="images/xmad_14972549116226_tZpod.png"/></a>
+				<h3 class="star_title1"><a>小米空气净化器</a></h3>
+				<p class="desc">OLED显示屏幕，激光颗粒物传感器</p>
+				<p class="price">1499元</p>
+			</li>
+			<li class="xm_star_list1">
+				<a class="star_img1"><img src="images/xmad_14966625747867_qcTyh.png"/></a>
+				<h3 class="star_title1"><a>小米5X</a></h3>
+				<p class="desc">4100mAh超长续航，8 核处理器</p>
+				<p class="price">699元起</p>
+			</li>
+			<li class="xm_star_list2">
+				<a class="star_img1"><img src="images/xmad_14972549116226_tZpod.png"/></a>
+				<h3 class="star_title1"><a>小米空气净化器</a></h3>
+				<p class="desc">OLED显示屏幕，激光颗粒物传感器</p>
+				<p class="price">1499元</p>
+			</li>
+			<li class="xm_star_list1">
+				<a class="star_img1"><img src="images/xmad_14966625747867_qcTyh.png"/></a>
+				<h3 class="star_title1"><a>小米5X</a></h3>
+				<p class="desc">4100mAh超长续航，8 核处理器</p>
+				<p class="price">699元起</p>
+			</li>
+			<li class="xm_star_list2">
+				<a class="star_img1"><img src="images/xmad_14972549116226_tZpod.png"/></a>
+				<h3 class="star_title1"><a>小米空气净化器</a></h3>
+				<p class="desc">OLED显示屏幕，激光颗粒物传感器</p>
+				<p class="price">1499元</p>
+			</li>
+			<li class="xm_star_list1">
+				<a class="star_img1"><img src="images/xmad_14966625747867_qcTyh.png"/></a>
+				<h3 class="star_title1"><a>小米5X</a></h3>
+				<p class="desc">4100mAh超长续航，8 核处理器</p>
+				<p class="price">699元起</p>
+			</li>
+			<li class="xm_star_list2">
+				<a class="star_img1"><img src="images/xmad_14972549116226_tZpod.png"/></a>
+				<h3 class="star_title1"><a>小米空气净化器</a></h3>
+				<p class="desc">OLED显示屏幕，激光颗粒物传感器</p>
+				<p class="price">1499元</p>
+			</li>
+		</ul>
+	</div>
+	<script>
+		var more_left=document.getElementById("more_left")
+		var more_right=document.getElementById("more_right")
+		var star=document.getElementById("star");
+		//var timer =null;
+		
+		function starplayL(){
+			
+			star.style.marginLeft="-1240px";
+			//console.log(star.style.marginLeft)
+		}
+		function starplayR(){
+			star.style.marginLeft="0px"
+		}
+//		time1=setInterval(function(){
+//			if(star.style.marginLeft=="-1240px"){
+//				clearInterval(time1);
+//				
+//				time1 = setInterval(function(){
+//					
+//					if(star.style.marginLeft=='0px'){
+//						clearInterval(time1);
+//						setInterval(starplayL,1000)
+//					}else{
+//						setInterval(starplayR,1000)
+//					}
+//				},1000)
+//			}else{
+//				starplayL()
+//			}
+//			
+//		},1000)
+		more_right.onclick=function(){
+			star.style.marginLeft="-1240px";
+			more_right.style.color="#e0e0e0"
+			more_left.style.color="#B0B0B0"
+		}
+		more_left.onclick=function(){
+			star.style.marginLeft="0px";
+			more_right.style.color="#B0B0B0"
+			more_left.style.color="#e0e0e0"
+		}
+		var time1=setInterval(starplayL,5000)
+		var time2=setInterval(starplayR,5000)
+	</script>
+</div>
+<div class="home_main">
+<div class="auto">
+		<div class="jiadian">
+			<div class="xm_star_hd">
+				<h2>家电</h2>
+			</div>
+			<div class="jiadian_more">
+				<ul class="jiadian_title" id="jiadian_title">
+					<li>热门</li>
+					<li>电视影音</li>
+					<li>电脑</li>
+					<li>家居</li>
+				</ul>
+			</div>
+		</div>
+		
+		<script>
+			var jiadian=document.getElementById("jiadian_title").getElementsByTagName("li")
+			var jd=0
+			jiadian[jd].className="jdd"
+			//jiadian[jd].style.borderBottom="2px solid #ff6700"
+			while(jd<jiadian.length){
+				jiadian[jd].index=jd
+			jiadian[jd].onmousemove=function(){
+				
+				var i=0
+				while(i<jiadian.length){
+					jiadian[i].className=""
+					//jiadian[jdd].style.borderBottom="0px solid #ff6700"
+					i++
+				}
+				jiadian[this.index].className="jdd"
+				//jiadian[jd].style.borderBottom="2px solid #ff6700"
+			}
+			jd++
+			}
+		</script>
+		<div class="jiadianbox">
+			<div class="jiucar"><img src="images/xmad_15028908537765_HTcAy.jpg"/></div>
+			<div class="jdbigbox">
+				<ul class="jdbigBOX">
+					<li class="boxitem">
+						<div class="boxitem_img"><img src="images/pms_1490077454.46128587!220x220.png" width="150" height="150"/></div>
+						<h3 class="box_title"><a>小米电视4A 49英寸</a></h3>
+						<p class="desc">8月17日-8月18日限时特惠 降400元</p>
+						<p class="price"> <span class="num">2199</span>元  <del><span class="num"> 2599</span>元</del>  </p>
+						<div class="review-wrapper">
+							<a>
+								<span class="review">刚刚拿到手，因为房子还没装好，所以暂时看不了，不过感...</span>
+								<span class="author">来自于 朱业茂 的评价</span>
+							</a>
+						</div>
+					</li>
+					<li class="boxitem">
+						<div class="boxitem_img"><img src="images/xmad_14965431426214_VSBlA.png" width="150" height="150"/></div>
+						<h3 class="box_title"><a>电视4A 55英寸标准版</a></h3>
+						<p class="desc">8月17日-8月18日限时特惠 降700元</p>
+						<p class="price"> <span class="num">2499</span>元  <del><span class="num"> 3199</span>元</del>  </p>
+						<div class="review-wrapper">
+							<a>
+								<span class="review">大屏幕的感观，心大一样的世界体现 ，超爱！超爱！</span>
+								<span class="author">来自于 龙沙 的评价</span>
+							</a>
+						</div>
+					</li>
+					<li class="boxitem">
+						<div class="boxitem_img"><img src="images/pms_1499138177.54329452!220x220.jpg" width="150" height="150"/></div>
+						<h3 class="box_title"><a>小米笔记本Air 13.3" i7处理器</a></h3>
+						<p class="desc">Intel酷睿i7处理器，8GB内存+256GB</p>
+						<p class="price"> <span class="num">5999</span>元 </p>
+						<div class="review-wrapper">
+							<a>
+								<span class="review">东西不错，很喜欢，等这款本子很长时间了</span>
+								<span class="author">来自于 紫龙灵轩 的评价</span>
+							</a>
+						</div>
+					</li>
+					<li class="boxitem">
+						<div class="boxitem_img"><img src="images/pms_1490604824.19051012!220x220.jpg" width="150" height="150"/></div>
+						<h3 class="box_title"><a>小米笔记本Air 12.5英寸</a></h3>
+						<p class="desc">集成显卡，全金属机身，超长续航</p>
+						<p class="price"> <span class="num">3599</span>元 </p>
+						<div class="review-wrapper">
+							<a>
+								<span class="review">很薄，手感也很好，就是硬盘小了点，usb只有一个，很...</span>
+								<span class="author">来自于 王喵喵 的评价</span>
+							</a>
+						</div>
+					</li>
+					<li class="boxitem">
+						<div class="boxitem_img"><img src="images/pms_1490077454.46128587!220x220.png" width="150" height="150"/></div>
+						<h3 class="box_title"><a>小米电视4A 49英寸</a></h3>
+						<p class="desc">8月17日-8月18日限时特惠 降400元</p>
+						<p class="price"> <span class="num">2199</span>元  <del><span class="num"> 2599</span>元</del>  </p>
+						<div class="review-wrapper">
+							<a>
+								<span class="review">刚刚拿到手，因为房子还没装好，所以暂时看不了，不过感...</span>
+								<span class="author">来自于 朱业茂 的评价</span>
+							</a>
+						</div>
+					</li>
+					<li class="boxitem">
+						<div class="boxitem_img"><img src="images/xmad_14965431426214_VSBlA.png" width="150" height="150"/></div>
+						<h3 class="box_title"><a>电视4A 55英寸标准版</a></h3>
+						<p class="desc">8月17日-8月18日限时特惠 降700元</p>
+						<p class="price"> <span class="num">2499</span>元  <del><span class="num"> 3199</span>元</del>  </p>
+						<div class="review-wrapper">
+							<a>
+								<span class="review">大屏幕的感观，心大一样的世界体现 ，超爱！超爱！</span>
+								<span class="author">来自于 龙沙 的评价</span>
+							</a>
+						</div>
+					</li>
+					<li class="boxitem">
+						<div class="boxitem_img"><img src="images/pms_1499138177.54329452!220x220.jpg" width="150" height="150"/></div>
+						<h3 class="box_title"><a>小米笔记本Air 13.3" i7处理器</a></h3>
+						<p class="desc">Intel酷睿i7处理器，8GB内存+256GB</p>
+						<p class="price"> <span class="num">5999</span>元 </p>
+						<div class="review-wrapper">
+							<a>
+								<span class="review">东西不错，很喜欢，等这款本子很长时间了</span>
+								<span class="author">来自于 紫龙灵轩 的评价</span>
+							</a>
+						</div>
+					</li>
+					<li class="boxitem">
+						<div class="boxitem_img"><img src="images/pms_1490604824.19051012!220x220.jpg" width="150" height="150"/></div>
+						<h3 class="box_title"><a>小米笔记本Air 12.5英寸</a></h3>
+						<p class="desc">集成显卡，全金属机身，超长续航</p>
+						<p class="price"> <span class="num">3599</span>元 </p>
+						<div class="review-wrapper">
+							<a>
+								<span class="review">很薄，手感也很好，就是硬盘小了点，usb只有一个，很...</span>
+								<span class="author">来自于 王喵喵 的评价</span>
+							</a>
+						</div>
+					</li>
+					
+					<div class="clear"></div>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+</div>
+</div>
+<div class="tuijian">
+	<div class="auto">
+	<div class="xm_star_hd">
+		<h2>为您推荐</h2>
+		<div class="more" style="background: #FFFFFF;">
+			<a class="more_left" id="more_left"><i class="iconfont icon-xiangyou"></i></a>
+			<a class="more_right" id="more_right"><i class="iconfont icon-xiangyou"></i></a>
+		</div>
+		
+	</div>
+	<div class="xm_star_main">
+		<ul class="xm_star_list" id="star">
+			<li class="xm_star_list1" style="background: #FFFFFF;">
+				<a class="star_img1"><img src="images/xmad_14966625747867_qcTyh.png"/></a>
+				<h3 class="star_title1"><a>小米5X</a></h3>
+				<p class="desc">4100mAh超长续航，8 核处理器</p>
+				<p class="price">699元起</p>
+			</li>
+			<li class="xm_star_list2" style="background: #FFFFFF;">
+				<a class="star_img1"><img src="images/xmad_14972549116226_tZpod.png"/></a>
+				<h3 class="star_title1"><a>小米空气净化器</a></h3>
+				<p class="desc">OLED显示屏幕，激光颗粒物传感器</p>
+				<p class="price">1499元</p>
+			</li>
+			<li class="xm_star_list1" style="background: #FFFFFF;">
+				<a class="star_img1"><img src="images/xmad_14966625747867_qcTyh.png"/></a>
+				<h3 class="star_title1"><a>小米5X</a></h3>
+				<p class="desc">4100mAh超长续航，8 核处理器</p>
+				<p class="price">699元起</p>
+			</li>
+			<li class="xm_star_list2" style="background: #FFFFFF;">
+				<a class="star_img1"><img src="images/xmad_14972549116226_tZpod.png"/></a>
+				<h3 class="star_title1"><a>小米空气净化器</a></h3>
+				<p class="desc">OLED显示屏幕，激光颗粒物传感器</p>
+				<p class="price">1499元</p>
+			</li>
+			<li class="xm_star_list1" style="background: #FFFFFF;">
+				<a class="star_img1"><img src="images/xmad_14966625747867_qcTyh.png"/></a>
+				<h3 class="star_title1"><a>小米5X</a></h3>
+				<p class="desc">4100mAh超长续航，8 核处理器</p>
+				<p class="price">699元起</p>
+			</li>
+			<li class="xm_star_list2" style="background: #FFFFFF;">
+				<a class="star_img1"><img src="images/xmad_14972549116226_tZpod.png"/></a>
+				<h3 class="star_title1"><a>小米空气净化器</a></h3>
+				<p class="desc">OLED显示屏幕，激光颗粒物传感器</p>
+				<p class="price">1499元</p>
+			</li>
+			<li class="xm_star_list1" style="background: #FFFFFF;">
+				<a class="star_img1"><img src="images/xmad_14966625747867_qcTyh.png"/></a>
+				<h3 class="star_title1"><a>小米5X</a></h3>
+				<p class="desc">4100mAh超长续航，8 核处理器</p>
+				<p class="price">699元起</p>
+			</li>
+			<li class="xm_star_list2" style="background: #FFFFFF;">
+				<a class="star_img1"><img src="images/xmad_14972549116226_tZpod.png"/></a>
+				<h3 class="star_title1"><a>小米空气净化器</a></h3>
+				<p class="desc">OLED显示屏幕，激光颗粒物传感器</p>
+				<p class="price">1499元</p>
+			</li>
+			<li class="xm_star_list1" style="background: #FFFFFF;">
+				<a class="star_img1"><img src="images/xmad_14966625747867_qcTyh.png"/></a>
+				<h3 class="star_title1"><a>小米5X</a></h3>
+				<p class="desc">4100mAh超长续航，8 核处理器</p>
+				<p class="price">699元起</p>
+			</li>
+			<li class="xm_star_list2" style="background: #FFFFFF;">
+				<a class="star_img1"><img src="images/xmad_14972549116226_tZpod.png"/></a>
+				<h3 class="star_title1"><a>小米空气净化器</a></h3>
+				<p class="desc">OLED显示屏幕，激光颗粒物传感器</p>
+				<p class="price">1499元</p>
+			</li>
+		</ul>
+	</div>
+	
+</div>	
+</div>
+<div class="rpcp">
+<div class="auto">
+		<div class="xm_star_hd">
+		<h2>热评产品</h2>
+		</div>
+		<ul class="rpcp_box">
+			<li class="rpcp_boxsmall">
+				<div class="figure_img"><img src="images/12987438-4522-425f-a252-2493152edda1.jpg" width="296" height="220"/></div>
+				<p class="review"><a>很小巧 像不喜欢戴活塞的人可以试试这种~很舒服包装还是一如既往的简洁 要是有盒子就好了=￣ω￣=</a></p>
+				<p class="author"> 来自于 鹤唳 的评价 </p>
+				<div class="info">
+					<h3 class="info_title"><a>小米胶囊耳机</a></h3>
+					<span class="sep">|</span>
+					<p class="price"><span class="num">69</span>元</p>
+				</div>
+			</li>
+			<li class="rpcp_boxsmall" style="margin-left: 14px;">
+				<div class="figure_img"><img src="images/3c77fe32-1113-482d-91b1-9c01a079cce6.jpg" width="296" height="220"/></div>
+				<p class="review"><a>刚收到，外观很漂亮，颜色也很喜欢，等了好长时间了，终于拿到了，非常满意，棒棒哒！！！</a></p>
+				<p class="author"> 来自于 龙炎 的评价 </p>
+				<div class="info">
+					<h3 class="info_title"><a>小米笔记本Air 12.5英寸</a></h3>
+					<span class="sep">|</span>
+					<p class="price"><span class="num">3499</span>元</p>
+				</div>
+			</li>
+			
+			<li class="rpcp_boxsmall" style="margin-left: 14px;">
+				<div class="figure_img"><img src="images/032d0ff1-f77f-4830-a469-f3564d55e0c5.jpg" width="296" height="220"/></div>
+				<p class="review"><a>非常可爱，一拿到小宝宝还没享受，一帮大宝宝先high了一把，同事也想买，希望早点大卖</a></p>
+				<p class="author"> 来自于 秘密 的评价 </p>
+				<div class="info">
+					<h3 class="info_title"><a>米兔智能故事机</a></h3>
+					<span class="sep">|</span>
+					<p class="price"><span class="num">199</span>元</p>
+				</div>
+			</li>
+			<li class="rpcp_boxsmall" style="margin-left: 14px;">
+				<div class="figure_img"><img src="images/8949026b-fa9a-4370-989b-5d5e2f149106.jpg" width="296" height="220"/></div>
+				<p class="review"><a>安装简洁方便，信号不错！！！！！</a></p>
+				<p class="author"> 来自于 追溯 的评价 </p>
+				<div class="info">
+					<h3 class="info_title"><a>小米路由器3</a></h3>
+					<span class="sep">|</span>
+					<p class="price"><span class="num">149</span>元</p>
+				</div>
+			</li>
+			
+			<div class="clear"></div>
+		</ul>
+</div>
+</div>
+<div class="footer">
+<div class="auto">
+	<div class="footer_service">
+		<ul class="service">
+			<li><a><i class="iconfont icon-weixiu"></i>预约维修服务</a></li>
+			<li><a><i class="iconfont icon-tianwuliyoutuihuo"></i>7天无理由退货</a></li>
+			<li><a><i class="iconfont icon-15tianmianfeihuanhuo24px"></i>15天免费换货</a></li>
+			<li><a><i class="iconfont icon-baoguo-"></i>满150元包邮</a></li>
+			<li><a><i class="iconfont icon-dingwei"></i>520余家售后网点</a></li>
+			<div class="clear"></div>
+		</ul>
+	</div>
+	<div class="footer_links">
+		<dl class="col-links">
+                <dt>帮助中心</dt>
+                
+                <dd><a>账户管理</a></dd>
+                
+                <dd><a>购物指南</a></dd>
+                
+                <dd><a>订单操作</a></dd>
+                
+            </dl>
+            <dl class="col-links">
+                <dt>服务支持</dt>
+                
+                <dd><a>售后政策</a></dd>
+                
+                <dd><a>自助服务</a></dd>
+                
+                <dd><a>相关下载</a></dd>
+                
+            </dl>
+            <dl class="col-links">
+                <dt>线下门店</dt>
+                
+                <dd><a>小米之家</a></dd>
+                
+                <dd><a>服务网点</a></dd>
+                
+                <dd><a>零售网点</a></dd>
+                
+            </dl>
+            <dl class="col-links">
+                <dt>关于小米</dt>
+                
+                <dd><a>了解小米</a></dd>
+                
+                <dd><a>加入小米</a></dd>
+                
+                <dd><a>联系我们</a></dd>
+                
+            </dl>
+            <dl class="col-links">
+                <dt>关注我们</dt>
+                
+                <dd><a>新浪微博</a></dd>
+                
+                <dd><a>小米部落</a></dd>
+                
+                <dd><a>官方微信</a></dd>
+                
+            </dl>
+            <dl class="col-links">
+                <dt>特色服务</dt>
+                
+                <dd><a>F 码通道</a></dd>
+                
+                <dd><a>礼物码</a></dd>
+                
+                <dd><a>防伪查询</a></dd>
+                
+            </dl>
+            <div class="col-contact">
+            	<p class="tel">400-100-5678</p>
+            	<p class="zhouyi">
+ 周一至周日 8:00-18:00<br>（仅收市话费）
+</p>
+				<a class="btn"> 24小时在线客服</a>
+            </div>
+		<div class="clear"></div>
+	</div>
+</div>
+</div>
+<div class="end">
+<div class="auto">
+	<div class="milogo"></div>
+	<div class="info-text">
+		<p class="sites"><a>小米商城</a><span>|</span><a>MIUI</a><span>|</span><a>米聊</a><span>|</span><a>多看书城</a><span>|</span><a>小米路由器</a><span>|</span><a>视频电话</a><span>|</span><a>小米天猫店</a><span>|</span><a>小米淘宝直营店</a><span>|</span><a>小米网盟</a><span>|</span><a>小米移动</a><span>|</span><a>隐私政策</a><span>|</span><a>Select Region</a></p>
+		<p class="sites">©mi.com 京ICP证110507号 京ICP备10046444号 京公网安备11010802020134号 京网文[2014]0059-0009号<br>
+违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</p>
+	</div>
+	<div class="info-links">
+		<a><img src="images/truste.png"/></a>
+		<a><img src="images/v-logo-1.png"/></a>
+		<a><img src="images/v-logo-3.png"/></a>
+		<a><img src="images/v-logo-2.png"/></a>
+	</div>
+	<div class="clear"></div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+[1019/102659:ERROR:renderer_main.cc(203)] Running without renderer sandbox
+[1019/102700:ERROR:child_discardable_shared_memory_manager.cc(266)] size: 4194304
+[1019/102701:ERROR:child_discardable_shared_memory_manager.cc(266)] size: 4194304
+[1019/102701:INFO:CONSOLE(206)] "Uncaught TypeError: Cannot read property 'permission' of undefined", source: http://mat1.gtimg.com/www/chrometips/notification2017_v0118.js (206)
+[1019/102702:ERROR:child_discardable_shared_memory_manager.cc(266)] size: 4194304
+[1019/102706:ERROR:audio_low_latency_output_win.cc(181)] Bailing out due to non-perfect timing.  Buffer size of 480 is not an even divisor of 1056
+[1019/102707:ERROR:child_discardable_shared_memory_manager.cc(266)] size: 4194304
+[1019/102712:ERROR:child_discardable_shared_memory_manager.cc(266)] size: 4194304
+[1019/102714:ERROR:child_discardable_shared_memory_manager.cc(266)] size: 4194304
+[1019/102719:ERROR:child_discardable_shared_memory_manager.cc(266)] size: 8294400
+[1019/102723:ERROR:child_discardable_shared_memory_manager.cc(266)] size: 4194304
+[1019/102732:ERROR:child_discardable_shared_memory_manager.cc(266)] size: 4194304
+[1019/102819:ERROR:child_discardable_shared_memory_manager.cc(266)] size: 8294400
+[1019/102825:ERROR:child_discardable_shared_memory_manager.cc(266)] size: 8294400
+[1019/102825:ERROR:child_discardable_shared_memory_manager.cc(266)] size: 4194304
+[1019/102830:ERROR:child_discardable_shared_memory_manager.cc(266)] size: 8294400
+[1019/103226:ERROR:renderer_main.cc(203)] Running without renderer sandbox
+[1019/103227:ERROR:child_discardable_shared_memory_manager.cc(266)] size: 4194304
+[1019/103229:INFO:CONSOLE(2)] "playStateChange:", source: http://mat1.gtimg.com/pingjs/ext2020/p/sports-videos/static/js/app.790d3354a4ab597cc428.js (2)
+[1019/103232:ERROR:child_discardable_shared_memory_manager.cc(266)] size: 4194304
+[1019/103232:INFO:CONSOLE(2)] "playStateChange:", source: http://mat1.gtimg.com/pingjs/ext2020/p/sports-videos/static/js/app.790d3354a4ab597cc428.js (2)
+[1019/103232:ERROR:audio_low_latency_output_win.cc(181)] Bailing out due to non-perfect timing.  Buffer size of 480 is not an even divisor of 1056
+[1019/103322:INFO:CONSOLE(2)] "playStateChange:", source: http://mat1.gtimg.com/pingjs/ext2020/p/sports-videos/static/js/app.790d3354a4ab597cc428.js (2)
